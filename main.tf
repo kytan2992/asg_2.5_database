@@ -6,7 +6,7 @@ resource "aws_dynamodb_table" "bookinventory" {
   name         = "${local.resource_prefix}-bookinventory"
   billing_mode = "PAY_PER_REQUEST"
 
-  hash_key     = var.hash_key
+  hash_key  = var.hash_key
   range_key = var.sort_key
 
   attribute {
@@ -20,6 +20,6 @@ resource "aws_dynamodb_table" "bookinventory" {
   }
 
   tags = {
-    Terraform   = "true"
+    Terraform = "true"
   }
 }
